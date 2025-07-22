@@ -42,4 +42,4 @@ jobs:
 
       - name: Terraform destroy
         working-directory: terraform5
-        run: terraform apply -auto-approve -var="image_tag=${{ github.event.inputs.image_tag }}"
+        run: terraform destroy -auto-approve -var="image_tag=${{ github.event.inputs.image_tag }}"
